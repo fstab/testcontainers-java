@@ -13,7 +13,7 @@ Running DB2 as a stand-in for in a test:
 public class SomeTest {
 
     @ClassRule
-    public Db2Container db2 = new Db2Container()
+    public static Db2Container db2 = new Db2Container()
         .acceptLicense();
     
     @Test
